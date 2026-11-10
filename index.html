@@ -1,108 +1,304 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Social Links Profile</title>
+    <meta
+      name="description"
+      content="نجوى النيربية - مطورة برمجيات متخصصة في Flutter و Laravel"
+    />
+    <title>الملف الشخصي - نجوى النيربية</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- ===================================================================
-         البطاقة
-         كل ما تحتاج إلى تعديله معلَّم بتعليق "غيّرني".
-         تحتاج فقط إلى تعديل النصوص والروابط في الأسفل — بدون إضافة
-         أو حذف أي عناصر.
-    ==================================================================== -->
-    <main class="card">
-      <!-- غيّرني: صورتك الشخصية.
-           ضع ملف صورتك في هذا المجلد ثم عدّل قيمة src.
-           مثال: src="my-photo.jpg" -->
-      <img class="avatar" src="Najwa.png" alt="Profile picture" />
+    <main class="page">
+      <!-- ===== الواجهة الرئيسية ===== -->
+      <header class="hero">
+        <img class="avatar" src="Najwa.png" alt="الصورة الشخصية لنجوى النيربية" />
 
-      <!-- غيّرني: اسمك -->
-     <h1 class="name">Najwa Alnerabiah</h1>
-<p class="location">📍 Syria / Hama</p>
+        <div class="hero-info">
+          <span class="hero-badge">مطورة برمجيات</span>
+          <h1 class="name">نجوى النيربية</h1>
+          <p class="role">Flutter &amp; Laravel Developer</p>
 
-<div class="about-card">
+          <ul class="contact">
+            <li class="contact-item">
+              <span class="contact-icon" aria-hidden="true">📍</span>
+              <span>سوريا / حماة</span>
+            </li>
+            <li class="contact-item">
+              <span class="contact-icon" aria-hidden="true">📞</span>
+              <a class="ltr" href="tel:+963956126406">00963956126406</a>
+            </li>
+            <li class="contact-item">
+              <span class="contact-icon" aria-hidden="true">✉️</span>
+              <a class="ltr" href="mailto:najwaaalnerabiah99@gmail.com"
+                >najwaaalnerabiah99@gmail.com</a
+              >
+            </li>
+          </ul>
 
-    <h2 class="section-title">
-        <span>👤</span> About Me
-    </h2>
+          <nav class="links" aria-label="الروابط الخارجية">
+            <a
+              class="btn btn-primary"
+              href="https://github.com/Najwa9924"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              class="btn"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              class="btn"
+              href="https://instagram.com/tech.creativity4"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </nav>
+        </div>
+      </header>
 
-    <p class="bio">
-        I'm a passionate Software Developer specializing in Flutter and Laravel,
-        building modern, scalable applications with clean code and intuitive user experiences.
+      <!-- ===== نبذة عني ===== -->
+      <section class="section" aria-labelledby="about-title">
+        <h2 class="section-title" id="about-title">
+          <span class="title-icon" aria-hidden="true">👤</span>نبذة عني
+        </h2>
 
-        I develop cross-platform mobile apps, RESTful APIs, and backend systems
-        using Laravel, Firebase, and MySQL to deliver reliable software solutions.
+        <div class="panel bio">
+          <p>
+            مطورة برمجيات متخصصة في تطوير تطبيقات الويب والموبايل باستخدام Flutter و
+            Laravel، أهتم ببناء أنظمة حديثة، قابلة للتوسّع، وذات أداء عالٍ مع التركيز
+            على كتابة كود نظيف وتجربة مستخدم مميزة.
+          </p>
+          <p>
+            أمتلك خبرة في تطوير تطبيقات الموبايل متعددة المنصات، وبناء واجهات البرمجة
+            (RESTful APIs) والأنظمة الخلفية المتكاملة باستخدام Laravel، Firebase، و
+            MySQL لتقديم حلول برمجية موثوقة.
+          </p>
+          <p>
+            وإلى جانب عملي التقني، أكرس شغفي لتعليم البرمجة وصناعة المحتوى التقني،
+            لمساعدة المبتدئين على دخول عالم تقنيات الويب والموبايل.
+          </p>
+          <p>
+            أتابع حالياً الدراسات العليا (الماجستير) في علوم الويب (Web Science)،
+            وأسعى باستمرار لتطوير مهاراتي في هندسة البرمجيات وأحدث تقنيات العصر.
+          </p>
+        </div>
 
-        Beyond development, I'm passionate about teaching programming,
-        creating technical content, and helping beginners learn web and mobile technologies.
+        <div class="grid grid-4">
+          <article class="card feature">
+            <h3 class="card-title">🚀 مطورة شغوفة</h3>
+            <p class="card-text">أحب تحويل الأفكار إلى منتجات حقيقية.</p>
+          </article>
+          <article class="card feature">
+            <h3 class="card-title">💻 كود نظيف</h3>
+            <p class="card-text">كتابة برمجيات قابلة للتوسع والصيانة.</p>
+          </article>
+          <article class="card feature">
+            <h3 class="card-title">📚 تعلم مستمر</h3>
+            <p class="card-text">استكشاف التقنيات الحديثة باستمرار.</p>
+          </article>
+          <article class="card feature">
+            <h3 class="card-title">🎯 التركيز على الأثر</h3>
+            <p class="card-text">بناء برمجيات تحل المشكلات الحقيقية.</p>
+          </article>
+        </div>
+      </section>
 
-        I'm currently pursuing a Master's degree in Web Science and continuously
-        improving my knowledge in software engineering and modern technologies.
-    </p>
+      <!-- ===== التعليم ===== -->
+      <section class="section" aria-labelledby="edu-title">
+        <h2 class="section-title" id="edu-title">
+          <span class="title-icon" aria-hidden="true">🎓</span>التعليم
+        </h2>
 
-</div>
+        <div class="grid grid-2">
+          <article class="card">
+            <h3 class="card-title">ماجستير في علوم الويب (Web Science)</h3>
+            <p class="card-text">الجامعة الافتراضية السورية</p>
+            <span class="card-meta">2024 - الآن</span>
+          </article>
 
-<div class="features">
+          <article class="card">
+            <h3 class="card-title">بكالوريوس في هندسة الحواسيب (تخصص برمجيات)</h3>
+            <p class="card-text">الجامعة الوطنية الخاصة</p>
+            <span class="card-meta">2018 - 2023</span>
+          </article>
+        </div>
+      </section>
 
-    <div class="feature">
-        <h3>🚀 Passionate Developer</h3>
-        <p>I love turning ideas into real products.</p>
-    </div>
+      <!-- ===== الخبرة المهنية ===== -->
+      <section class="section" aria-labelledby="exp-title">
+        <h2 class="section-title" id="exp-title">
+          <span class="title-icon" aria-hidden="true">💼</span>الخبرة المهنية
+        </h2>
 
-    <div class="feature">
-        <h3>💻 Clean Code</h3>
-        <p>Writing scalable and maintainable software.</p>
-    </div>
+        <article class="card">
+          <h3 class="card-title">مطورة تطبيقات ومواقع (مستقلة / Freelance)</h3>
+          <ul class="card-list">
+            <li>
+              تقديم حلول برمجية متكاملة وتطوير تطبيقات الهواتف المحمولة وأنظمة الويب
+              للعملاء بمختلف القطاعات.
+            </li>
+            <li>
+              تصميم وبناء تطبيقات عبر منصات متعددة باستخدام Flutter وتطوير الأنظمة
+              الخلفية عبر Laravel و Firebase.
+            </li>
+            <li>
+              التركيز على تقديم كود نظيف، واجهات مستخدم سلسة، وحلول تقنية تركز على
+              تجربة المستخدم.
+            </li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">REST APIs</span>
+          </div>
+        </article>
+      </section>
 
-    <div class="feature">
-        <h3>📚 Continuous Learner</h3>
-        <p>Always exploring new technologies.</p>
-    </div>
+      <!-- ===== أبرز المشاريع ===== -->
+      <section class="section" aria-labelledby="projects-title">
+        <h2 class="section-title" id="projects-title">
+          <span class="title-icon" aria-hidden="true">🚀</span>أبرز المشاريع
+        </h2>
 
-    <div class="feature">
-        <h3>🎯 Focus on Impact</h3>
-        <p>Building software that solves problems.</p>
-    </div>
+        <div class="grid grid-2">
+          <article class="card">
+            <h3 class="card-title">🎓 منصة CourseHub التعليمية</h3>
+            <p class="card-text">
+              تطبيق موبايل تعليمي متكامل لإدارة الدورات التدريبية؛ يتيح المصادقة
+              الآمنة، استعراض كتالوج الدورات، تتبع تقدم الطلاب، الاختبارات التفاعلية،
+              ونظام محادثة فورية بين الطلاب والمحاضرين.
+            </p>
+            <div class="tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Riverpod</span>
+              <span class="tag">Laravel API</span>
+              <span class="tag">Real-time Chat</span>
+            </div>
+          </article>
 
-</div>
+          <article class="card">
+            <h3 class="card-title">📚 تطبيق المكتبة الإلكترونية (E-Library)</h3>
+            <p class="card-text">
+              تطبيق متكامل للمكتبة الرقمية يضم نظام إدارة محتوى (CMS) شامل للمسؤول
+              لإضافة وتعديل الكتب والمؤلفين والناشرين، مع ميزات بحث متقدم وتصفح دقيق
+              للمستخدمين.
+            </p>
+            <div class="tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">REST API</span>
+              <span class="tag">CMS</span>
+            </div>
+          </article>
 
-<div class="skills">
+          <article class="card">
+            <h3 class="card-title">🎉 تطبيق إدارة الفعاليات (Dream Party)</h3>
+            <p class="card-text">
+              منصة رقمية متطورة تتيح للمستخدمين إدارة فعالياتهم الشخصية بكل سهولة،
+              مع نظام متكامل لحجز وإلغاء الفعاليات بسلاسة.
+            </p>
+            <div class="tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">UI/UX</span>
+            </div>
+          </article>
 
-    <h2 class="section-title">
-        <span>&lt;/&gt;</span> Technical Skills
-    </h2>
+          <article class="card">
+            <h3 class="card-title">🏥 نظام إدارة العيادة (طبيب ومريض)</h3>
+            <p class="card-text">
+              نظام مزدوج مصمم لتبسيط سير العمل؛ تطبيق للطبيب لإدارة المواعيد
+              والسجلات والمدفوعات، وتطبيق للمريض لمتابعة الزيارات واستخدام تقنية QR
+              Code للوصول السريع للسجلات.
+            </p>
+            <div class="tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">QR Code</span>
+              <span class="tag">Provider</span>
+              <span class="tag">MySQL</span>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <div class="skills-list">
+      <!-- ===== التدريب والشهادات ===== -->
+      <section class="section" aria-labelledby="certs-title">
+        <h2 class="section-title" id="certs-title">
+          <span class="title-icon" aria-hidden="true">🏆</span>التدريب والشهادات
+        </h2>
 
-        <span>Flutter</span>
-        <span>Dart</span>
-        <span>Laravel</span>
-        <span>C#</span>
-        <span>Firebase</span>
-        <span>MySQL</span>
-        <span>REST API</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>OOP</span>
+        <div class="grid grid-2">
+          <article class="card">
+            <h3 class="card-title">💡 مشروع تمكين الشباب (UNDP)</h3>
+            <span class="card-meta">نوفمبر 2023 - مارس 2024</span>
+            <p class="card-text">
+              إكمال برنامج تدريبي مكثف (400 ساعة) في تطوير تطبيقات الهاتف المحمول
+              باستخدام Flutter، مع التركيز على UI/UX وإدارة الحالة.
+            </p>
+          </article>
 
-    </div>
+          <article class="card">
+            <h3 class="card-title">📜 الشهادات التدريبية</h3>
+            <ul class="card-list">
+              <li>
+                <strong>Introduction to Systems Architecture</strong>
+                <span class="muted">| IBM via Coursera (مارس 2026)</span>
+              </li>
+              <li>
+                <strong>IT Systems Design and Analysis</strong>
+                <span class="muted">| SkillUp via Coursera (مايو 2025)</span>
+              </li>
+              <li>
+                <strong>تحسين محركات البحث (SEO)</strong>
+                <span class="muted">| منصة إدراك (ديسمبر 2025)</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-</div>
+      <!-- ===== المهارات التقنية ===== -->
+      <section class="section" aria-labelledby="skills-title">
+        <h2 class="section-title" id="skills-title">
+          <span class="title-icon ltr" aria-hidden="true">&lt;/&gt;</span>المهارات التقنية
+        </h2>
 
-      <!-- الروابط.
-           غيّرني: لكل رابط، عدّل النص بين الوسمين
-           (مثل "GitHub") وعدّل عنوان الموقع في href="...". -->
-      <nav class="links">
-        <a class="link" href="https://github.com">GitHub</a>
-        <a class="link" href="https://facebook.com">Facebook</a>
-        <a class="link" href="https://instagram.com">Instagram</a>
-      </nav>
+        <ul class="skills-list">
+          <li>Flutter</li>
+          <li>Dart</li>
+          <li>Laravel</li>
+          <li>C#</li>
+          <li>Firebase</li>
+          <li>MySQL</li>
+          <li>REST API</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>OOP</li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <p>© نجوى النيربية — جميع الحقوق محفوظة</p>
+      </footer>
     </main>
   </body>
 </html>
